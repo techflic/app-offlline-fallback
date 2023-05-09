@@ -10,6 +10,14 @@
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css" />
 
+    <script>
+      if(window.location.host.includes("github.io")){
+        var base = document.createElement('base');
+        base.href = `${window.location.origin}/app-offlline-fallback/`;
+        document.getElementsByTagName('head')[0].appendChild(base);
+      }
+    </script>
+
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
   </head>
