@@ -1,0 +1,20 @@
+{
+  "name": "app-offline-fallback",
+  "version": "1.0.0",
+  "description": "web app fallback mechanism when network is down",
+  "main": "index.js",
+  "scripts": {
+    "serve": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "service",
+    "worker",
+    "offline"
+  ],
+  "author": "vjay11yenam@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
