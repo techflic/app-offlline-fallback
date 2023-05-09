@@ -7,10 +7,6 @@
 
     <title>Offline Fallback Page Demo</title>
 
-    <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css" />
-
-    <!-- import the webpage's javascript file -->
     <script>
       var base = document.createElement('base');
       if(window.location.host.includes("github.io")){
@@ -21,8 +17,13 @@
       document.head.appendChild(base);
 
       var script = document.createElement('script');
-      script.setAttribute('src', base.href + "/script.js");
+      script.setAttribute('src', base.href + "script.js");
       document.head.appendChild(script);
+
+      var link = document.createElement('link');
+      link.setAttribute('rel', "stylesheet");
+      link.setAttribute('href', base.href + "style.css");
+      document.head.appendChild(link);
     </script>
   </head>
   <body>
